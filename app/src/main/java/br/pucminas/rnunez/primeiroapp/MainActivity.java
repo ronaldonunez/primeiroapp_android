@@ -1,10 +1,12 @@
 package br.pucminas.rnunez.primeiroapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import br.pucminas.rnunez.primeiroapp.exemplo0.PrimeiraActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,8 +19,13 @@ public class MainActivity extends AppCompatActivity {
         btnExemplo0.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Clicou no botão!", Toast.LENGTH_LONG).show();
+                chamaExemplo0();
             }
         });
+    }
+
+    private void chamaExemplo0() {
+        Intent intent = new Intent(this, PrimeiraActivity.class);
+        startActivity(intent);
     }
 }
