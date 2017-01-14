@@ -12,7 +12,7 @@
     tools:context="br.pucminas.rnunez.primeiroapp.exemplo0.PrimeiraActivity">
 
     <TextView
-        android:text="TextView"
+        android:text="Parâmetro para a Segunda Activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
