@@ -15,10 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".exemplo0.PrimeiraActivity"
-            android:label="PrimeiraActivity"/>
-        <activity android:name=".exemplo0.SegundaActivity"
-            android:label="SegundaActicity"></activity>
+        <activity
+            android:name=".exemplo0.PrimeiraActivity"
+            android:label="PrimeiraActivity" />
+        <activity
+            android:name=".exemplo0.SegundaActivity"
+            android:label="SegundaActicity" />
+        <activity
+            android:name=".exemplo1.CalculadoraActivity"
+            android:label="Calculadora"/>
     </application>
 
 </manifest>
