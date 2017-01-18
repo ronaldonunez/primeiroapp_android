@@ -23,7 +23,10 @@
             android:label="SegundaActicity" />
         <activity
             android:name=".exemplo1.CalculadoraActivity"
-            android:label="Calculadora"/>
+            android:label="Calculadora" />
+        <activity
+            android:name=".exemplo2.LayoutInflaterActivity"
+            android:label="Layout Inflator Ex."/>
     </application>
 
 </manifest>
