@@ -16,5 +16,13 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="estiloExemplo">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/navy_blue</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
 
+    <color name="navy_blue">#05006f</color>
 </resources>

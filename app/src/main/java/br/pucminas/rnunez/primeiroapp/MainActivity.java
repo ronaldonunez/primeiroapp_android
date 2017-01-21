@@ -9,6 +9,7 @@ import android.widget.Button;
 import br.pucminas.rnunez.primeiroapp.exemplo0.PrimeiraActivity;
 import br.pucminas.rnunez.primeiroapp.exemplo1.CalculadoraActivity;
 import br.pucminas.rnunez.primeiroapp.exemplo2.LayoutInflaterActivity;
+import br.pucminas.rnunez.primeiroapp.exemplo3.RecursosActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnExemplo3 = (Button) findViewById(R.id.btnExemplo3);
+        btnExemplo3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                chamaExemplo3();
+            }
+        });
+
 
     }
 
@@ -58,4 +67,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LayoutInflaterActivity.class);
         startActivity(intent);
     }
+
+    private void chamaExemplo3() {
+        Intent intent = new Intent(this, RecursosActivity.class);
+        startActivity(intent);
+    }
+
 }
