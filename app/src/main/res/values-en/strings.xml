@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="lbl_endereco">Address</string>
+    <string name="lbl_nome">Name</string>
+    <string name="lbl_telefone">Phone</string>
+    <string name="lbl_texto">Instructions USen</string>
+    <string name="title_activity_segunda">SecondActivity</string>
+    <string name="text_style">Styled Text</string>
+</resources>

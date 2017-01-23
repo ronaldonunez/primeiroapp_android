@@ -5,4 +5,5 @@
     <string name="lbl_telefone">Telefone</string>
     <string name="lbl_endereco">Endereço</string>
     <string name="lbl_texto">Instruções ptBR</string>
+    <string name="text_style">Texto com estilo</string>
 </resources>
