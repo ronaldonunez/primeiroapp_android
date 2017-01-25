@@ -35,4 +35,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnExemplo3" />
 
+    <Button
+        android:text="Exemplo 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnExemplo4" />
+
 </LinearLayout>

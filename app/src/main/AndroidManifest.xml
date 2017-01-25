@@ -29,7 +29,10 @@
             android:label="Layout Inflator Ex." />
         <activity
             android:name=".exemplo3.RecursosActivity"
-            android:label="Recursos Activity"/>
+            android:label="Recursos Activity" />
+        <activity
+            android:name=".exemplo4.ComponentesActivity"
+            android:label="Componentes Activity"/>
     </application>
 
 </manifest>
