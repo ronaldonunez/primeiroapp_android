@@ -6,4 +6,13 @@
     <string name="lbl_endereco">Endereço</string>
     <string name="lbl_texto">Instruções ptBR</string>
     <string name="text_style">Texto com estilo</string>
+    
+    <string-array name="str_array_examples">
+        <item>Exemplo 0</item>
+        <item>Exemplo 1</item>
+        <item>Exemplo 2</item>
+        <item>Exemplo 3</item>
+        <item>Exemplo 4</item>
+        <item>Exemplo 5</item>
+    </string-array>
 </resources>

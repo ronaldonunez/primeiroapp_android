@@ -4,7 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.List;
 
 import br.pucminas.rnunez.primeiroapp.exemplo0.PrimeiraActivity;
 import br.pucminas.rnunez.primeiroapp.exemplo1.CalculadoraActivity;
@@ -15,56 +20,44 @@ import br.pucminas.rnunez.primeiroapp.exemplo5.SpinnerListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    String[] examplesList;
+    ListView lstExamples;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnExemplo0 = (Button) findViewById(R.id.btnExemplo0);
-        btnExemplo0.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                chamaExemplo0();
-            }
-        });
+        examplesList = getResources().getStringArray(R.array.str_array_examples);
+        lstExamples = (ListView) findViewById(R.id.lstExamples);
 
-        Button btnExemplo1 = (Button) findViewById(R.id.btnExemplo1);
-        btnExemplo1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                chamaExemplo1();
-            }
-        });
+        ArrayAdapter<String> examplesAdapter =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, examplesList);
 
-        Button btnExemplo2 = (Button) findViewById(R.id.btnExemplo2);
-        btnExemplo2.setOnClickListener(new View.OnClickListener(){
+        lstExamples.setAdapter(examplesAdapter);
+        lstExamples.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                chamaExemplo2();
-            }
-        });
-
-        Button btnExemplo3 = (Button) findViewById(R.id.btnExemplo3);
-        btnExemplo3.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                chamaExemplo3();
-            }
-        });
-
-        Button btnExemplo4 = (Button) findViewById(R.id.btnExemplo4);
-        btnExemplo4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                chamaExemplo4();
-            }
-        });
-
-        Button btnExemplo5 = (Button) findViewById(R.id.btnExemplo5);
-        btnExemplo5.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                chamaExemplo5();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        chamaExemplo0();
+                        break;
+                    case 1:
+                        chamaExemplo1();
+                        break;
+                    case 2:
+                        chamaExemplo2();
+                        break;
+                    case 3:
+                        chamaExemplo3();
+                        break;
+                    case 4:
+                        chamaExemplo4();
+                        break;
+                    case 5:
+                        chamaExemplo5();
+                        break;
+                }
             }
         });
 

@@ -11,40 +11,9 @@
     android:orientation="vertical"
     tools:context="br.pucminas.rnunez.primeiroapp.MainActivity">
 
-    <Button
-        android:text="Exemplo 0"
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExemplo0" />
-
-    <Button
-        android:text="Exemplo 1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExemplo1" />
-
-    <Button
-        android:text="Exemplo 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExemplo2" />
-
-    <Button
-        android:text="Exemplo 3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExemplo3" />
-
-    <Button
-        android:text="Exemplo 4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExemplo4" />
-
-    <Button
-        android:text="Exemplo 5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExemplo5" />
+        android:layout_height="match_parent"
+        android:id="@+id/lstExamples"/>
 
 </LinearLayout>
