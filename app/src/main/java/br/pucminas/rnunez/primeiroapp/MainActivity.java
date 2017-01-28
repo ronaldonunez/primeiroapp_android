@@ -11,6 +11,7 @@ import br.pucminas.rnunez.primeiroapp.exemplo1.CalculadoraActivity;
 import br.pucminas.rnunez.primeiroapp.exemplo2.LayoutInflaterActivity;
 import br.pucminas.rnunez.primeiroapp.exemplo3.RecursosActivity;
 import br.pucminas.rnunez.primeiroapp.exemplo4.ComponentesActivity;
+import br.pucminas.rnunez.primeiroapp.exemplo5.SpinnerListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnExemplo5 = (Button) findViewById(R.id.btnExemplo5);
+        btnExemplo5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                chamaExemplo5();
+            }
+        });
 
     }
 
@@ -84,6 +92,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void chamaExemplo4() {
         Intent intent = new Intent(this, ComponentesActivity.class);
+        startActivity(intent);
+    }
+
+    private void chamaExemplo5() {
+        Intent intent = new Intent(this, SpinnerListActivity.class);
         startActivity(intent);
     }
 

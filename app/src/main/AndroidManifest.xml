@@ -32,7 +32,10 @@
             android:label="Recursos Activity" />
         <activity
             android:name=".exemplo4.ComponentesActivity"
-            android:label="Componentes Activity"/>
+            android:label="Componentes Activity" />
+        <activity
+            android:name=".exemplo5.SpinnerListActivity"
+            android:label="Adapters e Listas"/>
     </application>
 
 </manifest>
